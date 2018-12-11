@@ -19,28 +19,10 @@ def login():
 	if request.method == 'POST': 
 
 		# create new post object
-
-		post = {"username": request.values['username'],}
+		post = {"username": request.values['username']}
 		# insert into collection
-
-		post_id = collect.insert_one(post3).inserted_id
-		print post_id # if ObjectId('...') then successful!
-		
-		'''
-		res = myclient.test.users.find_one({"username" : request.values['username']})       	
-		if res:
-			if res["redeemed"]:
-				return "已兌換過獎品"
-			else:
-				temp = myclient.test.users.find_one({"username" : request.values['username'], "redeemed" : False})
-				temp2 = temp.copy()
-				temp["redeemed"] = True
-				myclient.test.users.save(temp)
-				return "可兌換獎品"
-		else:
- 			return "未參加活動"
-		'''
-
+		post_id = myclient.test.username.insert_one(post).inserted_id
+		return "成功"
 	return "<form method='post' action='/login'><input type='text' name='username' /></br><button type='submit'>Submit</button></form>"
 @app.route('/js/<path>')
 def send_js(path):
@@ -60,4 +42,4 @@ def page_not_found(error):
 
 if __name__ == '__main__':
     app.debug = True
-    app.run(host='0.0.0.0') 
+    app.run(host='0.0.0.0',port=4321) 
