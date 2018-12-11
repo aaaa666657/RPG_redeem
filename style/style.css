@@ -1,0 +1,300 @@
+#again_btn_time,#answer,#answer1,#show_wrong_ans_0,*{
+	text-align:center;
+}
+.Question_page{
+	margin-top:50px;
+}
+/***************************Start Page**********************************/
+#input_nid{
+	height: 25px;
+	padding:5px 15px; border:2px black solid;
+	cursor:pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#start_btn{
+	background-color:#f44336;
+	font-size:24px;
+	margin:30px;
+	padding:16px 32px;
+	border-radius: 12px;
+}
+#start_btn:hover{
+	background-color:#ac0707;
+}
+#start_img{
+	max-width: 40%;
+	max-height: 40%;
+}
+/*************************Timer********************************/
+.shell {
+	height: 20px;
+	width: 20em;
+	background: #555;
+	margin: 30px auto;
+	border-radius: 50px;
+	overflow: hidden;
+}
+.shell div {
+	float: right;
+	height: 30px;
+	background: #ef4e6e;
+}
+/*****************************Score***************************/
+#score{
+	position:absolute;
+	margin: 0px 0px 5px 20px;
+	top:0;
+	left:0;
+}
+#total_score{
+	text-align: left;
+	margin:5px 10px 0 0;
+	font-size:20px;
+	font-weight:bold;
+}
+/*************************Question_page**************************/
+.Question_page h2{
+	text-align:center;
+	font-size:25px;
+	font-weight:normal;
+}
+.Question_page form div{
+	text-align:center;
+	padding:10px;
+}
+.Question_page form div:hover{
+	background-color:rgba(166,255,255,0.3);
+}
+.Question_page form input{
+	background-color: #1a8cffff;
+	width: 370px;
+	font-size: 20px;
+	margin: 30px;
+	padding: 16px 16px 16px 16px;
+	border-radius: 12px;
+}
+/*************************show_wrong_page**************************/
+.show_wrong_page h2{
+	text-align:center;
+	font-size:25px;
+	font-weight:normal;
+}
+.show_wrong_page form div{
+	text-align:center;
+	padding:10px;
+}
+.show_wrong_page form div:hover{
+	background-color:#e6ffff;
+}
+.show_wrong_page form input{
+	background-color: #1a8cffff;
+	width: 370px;
+	font-size: 20px;
+	margin: 30px;
+	padding: 16px 16px 16px 16px;
+	border-radius: 12px;
+}
+/***************************end_page*****************************/
+#final_p, #final_score, #final_p_time, #final_score_time{
+	font-size:35px;
+	font-weight:bold;
+}
+#again_btn, #info_btn, #again_btn_time,#answer,#answer1,#show_wrong_ans_0, #info_btn_time{
+	background-color: #80bfff;
+	width:340px;
+	font-size:20px;
+	font-weight:bold;
+	margin:10px 30px 30px 30px;
+	padding:16px 32px;
+	border-radius: 12px;
+}
+#again_btn:hover, #again_btn_time:hover{
+	background-color: #1a8cff;
+}
+#info_btn:hover, #info_btn_time:hover{
+	background-color: #1a8cff;
+}
+#finish_img_time{
+	margin-top: 8%;
+	margin-bottom: 2%;
+	max-width: 40%;
+	max-height: 40%;
+}
+
+/*RWD 手機*/
+@media (min-width: 320px) and (max-width: 425px){
+	.Question_page{
+		margin-top: 0;
+	}
+	.Question_page h2{
+		margin-left: 5%;
+		margin-right: 5%;
+		font-size:22px;
+		font-weight:normal;
+	}
+	.Question_page form input{
+		background-color: #1a8cffff;
+		width: 250px;
+		font-size: 20px;
+        font-weight: normal;
+		border-radius: 12px;
+        margin:15px;
+        overflow-y: auto;
+	}
+	#start_btn{
+		background-color:#f44336;
+		font-size: 20px;
+		margin: 0;
+		padding:16px 32px;
+		border-radius: 12px;
+	}
+	#start_img{
+		margin-top: 10%;
+		max-width: 80%;
+		max-height: 80%;
+	}
+	#score{
+		margin-left: 32%;
+	}
+	#total_score{
+		text-align: center;
+	}
+	#finish_img{
+		margin-top: 10%;
+		max-width: 55%;
+		max-height: 55%;
+	}
+	#finish_img_time{
+		margin-top: 10%;
+		max-width: 75%;
+		max-height: 75%;
+	}
+	#info_btn, #info_btn_time{
+		background-color: #80bfff;
+		width:200px;
+		font-size:20px;
+		font-weight:bold;
+		margin:10px 30px 30px 30px;
+		padding:16px 32px;
+		border-radius: 12px;
+	}
+	#again_btn, #again_btn_time{
+		background-color: #80bfff;
+		width:200px;
+		font-size:20px;
+		font-weight:bold;
+		margin:30px 30px 30px 30px;
+		padding:16px 32px;
+		border-radius: 12px;
+	}
+	#final_p,#final_score, #final_p_time, #final_score_time{
+		font-size:30px;
+		font-weight:bold;
+	}
+	.shell{
+		height: 20px;
+		width: 15em;
+		background: #555;
+		margin: 30px auto;
+		border-radius: 50px;
+		overflow: hidden;
+	}
+	.shell div{
+		float: right;
+		height: 30px;
+		background: #ef4e6e;
+	}
+}
+
+/*RWD 平板*/
+@media (min-width: 960px) and (max-width: 1200px){
+    .Question_page{
+        margin-top: 0;
+    }
+    .Question_page h2{
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size:22px;
+        font-weight:normal;
+    }
+    .Question_page form input{
+        background-color: #1a8cffff;
+        width: 370px;
+        font-size: 20px;
+        font-weight: normal;
+        border-radius: 12px;
+        margin:15px;
+        overflow-y: auto;
+    }
+    #start_btn{
+        background-color:#f44336;
+        font-size: 20px;
+        margin: 0;
+        padding:16px 32px;
+        border-radius: 12px;
+    }
+    #start_img{
+        margin-top: 10%;
+        max-width: 80%;
+        max-height: 80%;
+    }
+    #score{
+        margin-left: 44%;
+    }
+    #total_score{
+        text-align: center;
+    }
+    #finish_img{
+        margin-top: 10%;
+        max-width: 55%;
+        max-height: 55%;
+    }
+    #finish_img_time{
+        margin-top: 10%;
+        max-width: 75%;
+        max-height: 75%;
+    }
+    #info_btn, #info_btn_time{
+        background-color: #80bfff;
+        width:200px;
+        font-size:20px;
+        font-weight:bold;
+        margin:10px 30px 30px 30px;
+        padding:16px 32px;
+        border-radius: 12px;
+    }
+    #again_btn, #again_btn_time{
+        background-color: #80bfff;
+        width:200px;
+        font-size:20px;
+        font-weight:bold;
+        margin:30px 30px 30px 30px;
+        padding:16px 32px;
+        border-radius: 12px;
+    }
+    #final_p,#final_score, #final_p_time, #final_score_time{
+        font-size:30px;
+        font-weight:bold;
+    }
+    .shell{
+        height: 20px;
+        width: 15em;
+        background: #555;
+        margin: 30px auto;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    .shell div{
+        float: right;
+        height: 30px;
+        background: #ef4e6e;
+    }
+}
+body {
+  background-image:url('../image/index_background.jpg');
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}

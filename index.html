@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml" xmlns:height="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>領獎系統</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="(min-width: 320px) and (max-width: 425px)" href="style/style.css" >
+    <link rel="stylesheet" href="style/style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js" defer></script>
+    <script type="text/javascript" src="js/main1.js" defer></script>
+</head>
+
+<body>
+<div id="app">
+    <!-- OFFSET -->
+    <div class="column-3"></div>
+    <!--Start Page-->
+    <div class="start_page" id="start_div">
+        <img src="image/start.jpg" alt="start" id="start_img"><br>
+
+        	<input type="text" id="input_nid" placeholder="輸入學號"><br>
+          <button   class="primary" id="start_btn">查詢</button>
+
+
+            </div>
+
+    <!--Q1-->
+    <div class="Question_page" id="Q1">
+      <h2>學號:</h2><h2 id = "NIDshow"></h2>
+        <h2 id = "q1_q">
+            兌獎狀態 <p id="ASK_right"><p>
+        </h2>
+<form>
+        <div>
+            <input type="button" class="0-1" name="Question1" value="GO Back" id="q1_ans_1" onclick="location.reload();"><br>
+        </div>
+</form>
+
+
+</div>
+    </body>
+</html>
