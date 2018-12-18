@@ -21,7 +21,7 @@ def login():
 	if request.method == 'POST': 
 
 		# create new post object
-		post = {'type':'RPG',"username": request.values['username'],'reedemed':False}
+		post = {'type':'RPG',"username": request.values['username'],'redeemed':False}
 		# insert into collection
 		post_id = DB.insert_one(post).inserted_id
 		return "成功"
