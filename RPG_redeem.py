@@ -11,6 +11,8 @@ app = Flask(__name__, static_url_path='')
 myclient = pymongo.MongoClient('mongodb://localhost:27017/')
 dblist = myclient.list_database_names()
 
+DB = myclient.isweek2018.gifts
+
 @app.route('/')
 def root():
     return send_file('index.html')
@@ -19,9 +21,9 @@ def login():
 	if request.method == 'POST': 
 
 		# create new post object
-		post = {"username": request.values['username']}
+		post = {'type':'RPG',"username": request.values['username'],'reedemed':False}
 		# insert into collection
-		post_id = myclient.test.username.insert_one(post).inserted_id
+        post_id = DB.insert_one(post).inserted_id
 		return "成功"
 	return "<form method='post' action='/login'><input type='text' name='username' /></br><button type='submit'>Submit</button></form>"
 @app.route('/js/<path>')
